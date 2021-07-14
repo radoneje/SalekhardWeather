@@ -52,7 +52,8 @@ async function main() {
         if(curs.length>0){
             let trand=(curs[0].Value-curs_old[0].Value)<0?0:1
             let row = sheet.getRow(i)
-           // row.values = [currency, curs[0].Value, "", trand, moment().format("DD.MM.yyyy HH:mm:ss")];
+            console.log(currency, curs[0].Value, "", trand, moment().format("DD.MM.yyyy HH:mm:ss"))
+            row.values = [currency, curs[0].Value, "", trand, moment().format("DD.MM.yyyy HH:mm:ss")];
             i++;
         }
 
