@@ -26,7 +26,7 @@ async function main() {
                 "--convert-to",
                 "xls",
                 "--outdir",
-                "/tmp",
+                config.outdir,
                 "/tmp/weather.xlsx",
 
             ]/*, {

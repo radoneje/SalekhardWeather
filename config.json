@@ -1,5 +1,6 @@
 {
   "openweathermapAppId": "0186daef2797f0296e1960b8909a570b",
+  "outdir": "/tmp",
   "city": [
     {"ru":"Салехард","en": "Salehard, RU" },
     {"ru": "Яр-Сале","en": "Yar-Sale, RU"}
