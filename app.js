@@ -45,9 +45,10 @@ async function main() {
 
     let valute=parser.parse(valuteXML, options);
     let valute_old=parser.parse(valuteXML, options);
-    console.log(valute.ValCurs.Valute)
-    for (var C of config.currency) {
 
+    for (var currency of config.currency) {
+        var curs=valute.filter(v=>{return v.CharCode==currency})
+        console.log(curs)
         i++;
     }
 
