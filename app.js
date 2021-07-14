@@ -45,7 +45,7 @@ async function main() {
 
     let valute=parser.parse(valuteXML, options);
     let valute_old=parser.parse(valuteXML, options);
-    console.log(valute)
+    console.log(valute.ValCurs.Valute)
     for (var C of config.currency) {
 
         i++;
