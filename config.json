@@ -3,6 +3,17 @@
   "outdir": "/mnt/titr-efirka",
   "city": [
     {"ru":"Салехард","en": "Salehard, RU" },
-    {"ru": "Яр-Сале","en": "Yar-Sale, RU"}
+    {"ru": "Муравленко","en": "Muravlenko, RU"},
+    {"ru": "Губкинский","en": "Gubkinskiy, RU"},
+    {"ru": "Тарко-Сале","en": "Tarko-Sale, RU"},
+    {"ru": "Надым","en": "Nadym, RU"},
+    {"ru": "Ноябрьск","en": "Noyabrsk, RU"},
+    {"ru": "Новый Уренгой","en": "Novyy Urengoy, RU"},
+    {"ru": "Лабытнанги","en": "Labytnangi, RU"},
+    {"ru": "Аксарка","en": "Aksarka, RU"},
+    {"ru": "Тазовский","en": "Tazovsky, RU"},
+    {"ru": "Мужи","en": "Muzhi, RU"},
+    {"ru": "Яр-Сале","en": "Yar-Sale, RU"},
+    {"ru": "Красноселькуп","en": "Krasnosel’kup, RU"}
   ]
 }
