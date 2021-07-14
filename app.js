@@ -21,8 +21,8 @@ async function main() {
         row.values = [city.ru, Math.round(r.temp), r.weather, r.weatherCode, moment().format("DD.MM.yyyy HH:mm:ss")];
         i++;
     }
-    let valuteXML=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp?date_req=29/03/2021")).data;
-    let valuteXML_old=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp?date_req=29/03/2021")).data;
+    let valuteXML=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp")).data;
+    let valuteXML_old=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp?date_req="+moment().add("-1", "day").format("DD/MM/yyyy HH:mm:ss"))).data;
 
     var options = {
         attributeNamePrefix : "@_",
