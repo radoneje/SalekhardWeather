@@ -5,6 +5,7 @@ const config = require('./config');
 const child_process = require('child_process')
 const fs = require('fs')
 const parser = require('fast-xml-parser');
+const he = require('he');
 
 
 main();
