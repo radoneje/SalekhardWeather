@@ -43,9 +43,9 @@ async function main() {
         stopNodes: ["parse-me-as-string"]
     };
 
-    let valute=parser.parse(valuteXML, options);
-    let valute_old=parser.parse(valuteXML, options);
-    console.log(valute)
+    let valute=parser.parse(valuteXML, options).ValCurs.Valute;
+    let valute_old=parser.parse(valuteXML, options).ValCurs.Valute;
+    //console.log(valute)
     for (var currency of config.currency) {
         var curs=valute.filter(v=>{return v.CharCode==currency})
         console.log(curs)
