@@ -1,0 +1,2026 @@
+{
+  "declaration": {
+    "attributes": {
+      "version": "1.0",
+      "encoding": "windows-1251"
+    }
+  },
+  "elements": [
+    {
+      "type": "element",
+      "name": "ValCurs",
+      "attributes": {
+        "Date": "27.03.2021",
+        "name": "Foreign Currency Market"
+      },
+      "elements": [
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01010"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "036"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "AUD"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "������������� ������"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "57,7197"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01020A"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "944"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "AZN"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "��������������� �����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "44,5895"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01035"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "826"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "GBP"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "���� ���������� ������������ �����������"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "104,3637"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01060"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "051"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "AMD"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "100"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "��������� ������"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "14,3412"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01090B"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "933"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "BYN"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "����������� �����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "28,8436"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01100"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "975"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "BGN"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "���������� ���"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "45,6289"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01115"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "986"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "BRL"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "����������� ����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "13,4096"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01135"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "348"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "HUF"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "100"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "���������� ��������"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "24,5135"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01200"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "344"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "HKD"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "10"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "����������� ��������"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "97,5152"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01215"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "208"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "DKK"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "������� �����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "11,9991"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01235"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "840"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "USD"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "������ ���"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "75,7576"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01239"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "978"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "EUR"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "89,2576"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01270"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "356"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "INR"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "10"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "��������� �����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "10,4638"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01335"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "398"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "KZT"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "100"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "������������� �����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "17,8629"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01350"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "124"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "CAD"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "��������� ������"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "60,2494"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01370"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "417"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "KGS"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "100"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "���������� �����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "89,3081"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01375"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "156"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "CNY"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "��������� ����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "11,5830"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01500"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "498"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "MDL"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "10"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "���������� ����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "42,1227"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01535"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "578"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "NOK"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "10"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "���������� ����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "88,1015"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01565"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "985"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "PLN"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "�������� ������"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "19,2812"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01585F"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "946"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "RON"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "��������� ���"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "18,2667"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01589"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "960"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "XDR"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "��� (����������� ����� �������������)"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "107,6765"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01625"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "702"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "SGD"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "������������ ������"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "56,2543"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01670"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "972"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "TJS"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "10"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "���������� ������"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "66,4540"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01700J"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "949"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "TRY"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "10"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "�������� ���"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "94,8357"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01710A"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "934"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "TMT"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "����� ����������� �����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "21,6760"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01717"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "860"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "UZS"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "10000"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "��������� �����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "72,2165"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01720"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "980"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "UAH"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "10"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "���������� ������"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "27,0945"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01760"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "203"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "CZK"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "10"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "������� ����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "34,1281"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01770"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "752"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "SEK"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "10"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "�������� ����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "87,5800"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01775"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "756"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "CHF"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "����������� �����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "80,4819"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01810"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "710"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "ZAR"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "10"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "��������������� ������"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "50,5219"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01815"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "410"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "KRW"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "1000"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "��� ���������� �����"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "67,0430"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "name": "Valute",
+          "attributes": {
+            "ID": "R01820"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "NumCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "392"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "CharCode",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "JPY"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Nominal",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "100"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Name",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "�������� ���"
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Value",
+              "elements": [
+                {
+                  "type": "text",
+                  "text": "69,2324"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

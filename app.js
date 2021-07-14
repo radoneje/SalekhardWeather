@@ -4,7 +4,7 @@ const moment = require('moment');
 const config = require('./config');
 const child_process = require('child_process')
 const fs = require('fs')
-const convert = require('xml-js');
+const parser = require('fast-xml-parser');
 
 
 main();
@@ -13,18 +13,37 @@ async function main() {
     const workbook = new ExcelJS.Workbook();
     const sheet = workbook.addWorksheet('Sheet1');
     var i = 1;
-    for (var city of config.city) {
+    /*for (var city of config.city) {
         console.log(city)
         let r = await getWeather(city.en);
         let row = sheet.getRow(i)
         row.values = [city.ru, Math.round(r.temp), r.weather, r.weatherCode, moment().format("DD.MM.yyyy HH:mm:ss")];
         i++;
-    }
+    }*/
     let valuteXML=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp?date_req=29/03/2021")).data;
     let valuteXML_old=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp?date_req=29/03/2021")).data;
 
-    let valute=convert.xml2json(valuteXML);
-    let valute_old=convert.xml2json(valuteXML);
+    var options = {
+        attributeNamePrefix : "@_",
+        attrNodeName: "attr", //default is 'false'
+        textNodeName : "#text",
+        ignoreAttributes : true,
+        ignoreNameSpace : false,
+        allowBooleanAttributes : false,
+        parseNodeValue : true,
+        parseAttributeValue : false,
+        trimValues: true,
+        cdataTagName: "__cdata", //default is 'false'
+        cdataPositionChar: "\\c",
+        parseTrueNumberOnly: false,
+        arrayMode: false, //"strict"
+        attrValueProcessor: (val, attrName) => he.decode(val, {isAttributeValue: true}),//default is a=>a
+        tagValueProcessor : (val, tagName) => he.decode(val), //default is a=>a
+        stopNodes: ["parse-me-as-string"]
+    };
+
+    let valute=parser.parse(valuteXML, options);
+    let valute_old=parser.parse(valuteXML, options);
     console.log(valute)
     for (var C of config.currency) {
 
