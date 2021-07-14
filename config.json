@@ -15,5 +15,6 @@
     {"ru": "Мужи","en": "Muzhi, RU"},
     {"ru": "Яр-Сале","en": "Yar-Sale, RU"},
     {"ru": "Красноселькуп","en": "Krasnoselkup, RU"}
-  ]
+  ],
+  "currency": ["USD", "EUR"]
 }

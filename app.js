@@ -4,6 +4,7 @@ const moment = require('moment');
 const config = require('./config');
 const child_process = require('child_process')
 const fs = require('fs')
+var parser = require('xml2json');
 
 
 main();
@@ -19,6 +20,18 @@ async function main() {
         row.values = [city.ru, Math.round(r.temp), r.weather, r.weatherCode, moment().format("DD.MM.yyyy HH:mm:ss")];
         i++;
     }
+    let valuteXML=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp?date_req=29/03/2021")).data;
+    let valuteXML_old=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp?date_req=29/03/2021")).data;
+
+    let valute=parser.toJson(valuteXML);
+    let valute_old=parser.toJson(valuteXML);
+    console.log(valute)
+    for (var C of config.currency) {
+
+        i++;
+    }
+
+
     await workbook.xlsx.writeFile("/tmp/weather.xlsx")
 
     const ps= child_process.spawn("libreoffice", [
