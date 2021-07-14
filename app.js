@@ -14,13 +14,13 @@ async function main() {
     const workbook = new ExcelJS.Workbook();
     const sheet = workbook.addWorksheet('Sheet1');
     var i = 1;
-    /*for (var city of config.city) {
+    for (var city of config.city) {
         console.log(city)
         let r = await getWeather(city.en);
         let row = sheet.getRow(i)
         row.values = [city.ru, Math.round(r.temp), r.weather, r.weatherCode, moment().format("DD.MM.yyyy HH:mm:ss")];
         i++;
-    }*/
+    }
     let valuteXML=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp?date_req=29/03/2021")).data;
     let valuteXML_old=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp?date_req=29/03/2021")).data;
 
@@ -48,8 +48,14 @@ async function main() {
     //console.log(valute)
     for (var currency of config.currency) {
         var curs=valute.filter(v=>{return v.CharCode==currency})
-        console.log(curs)
-        i++;
+        var curs_old=valute_old.filter(v=>{return v.CharCode==currency})
+        if(curs.length>0){
+            let trand=(curs[0].Value-curs_old[0].Value)<0?0:1
+            let row = sheet.getRow(i)
+            row.values = [currency, curs[0].Value, "", trand, moment().format("DD.MM.yyyy HH:mm:ss")];
+            i++;
+        }
+
     }
 
 
