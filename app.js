@@ -20,21 +20,27 @@ async function main() {
         i++;
     }
     await workbook.xlsx.writeFile("/tmp/weather.xlsx")
-    var out = fs.openSync('/tmp/out.log', 'a');
-    var err = fs.openSync('/tmp/out.log', 'a');
 
-    setTimeout(()=>{
-        child_process.spawn("libreoffice", [
+    const ps= child_process.spawn("libreoffice", [
                 "--headless",
                 "--convert-to",
                 "xls",
-                "/tmp/weather.xlsx"
-            ], {
+                "--outdir",
+                "/tmp",
+                "/tmp/weather.xlsx",
+
+            ]/*, {
                 detached: true,
                 stdio: ['ignore', out, err]
-            }
-        ).unref();
-    },500)
+            }*/
+        )
+    ps.on('close', (code) => {
+            console.log(`ps process exited with code ${code}`);
+    });
+    ps.stdout.on('data', (data) => {
+        console.log(`ps process data ${data}`);
+    });
+
 
 }
 
