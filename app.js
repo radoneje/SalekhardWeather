@@ -23,16 +23,19 @@ async function main() {
     var out = fs.openSync('/tmp/out.log', 'a');
     var err = fs.openSync('/tmp/out.log', 'a');
 
-    child_process.spawn("libreoffice", [
-            "--headless",
-            "--convert-to",
-            "xls",
-            "/tmp/weather.xlsx"
-        ], {
-            detached: true,
-            stdio: ['ignore', out, err]
-        }
-    ).unref();
+    setTimeout(()=>{
+        child_process.spawn("libreoffice", [
+                "--headless",
+                "--convert-to",
+                "xls",
+                "/tmp/weather.xlsx"
+            ], {
+                detached: true,
+                stdio: ['ignore', out, err]
+            }
+        ).unref();
+    },500)
+
 }
 
 // lat широта
