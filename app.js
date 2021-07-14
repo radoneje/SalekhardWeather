@@ -36,9 +36,13 @@ async function main() {
         )
     ps.on('close', (code) => {
             console.log(`ps process exited with code ${code}`);
+            setTimeout(async ()=>{await main()}, 20*60*1000)
     });
     ps.stdout.on('data', (data) => {
-        console.log(`ps process data ${data}`);
+        console.log(`${data}`);
+    });
+    ps.stderr.on('data', (data) => {
+        console.log(`${data}`);
     });
 
 
