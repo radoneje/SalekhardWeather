@@ -16,7 +16,9 @@ router.post("/",async (req,res)=>{
     const workbook = new ExcelJS.Workbook();
     const sheet = workbook.addWorksheet('NF');
     var i = 1;
+    console.log("arr loop")
     for (var elem in arr) {
+        console.log("arr elem", i)
         let row = sheet.getRow(i)
         i++;
         if (elem.type == 'SOT')
@@ -28,7 +30,9 @@ router.post("/",async (req,res)=>{
         if (elem.type == 'SRC')
             row.values = ["", "", "", "", elem.text]
     }
+    console.log("make xlsx")
         await workbook.xlsx.writeFile("/tmp/nf.xlsx")
+    console.log("convert xlsx")
         const ps= child_process.spawn("libreoffice", [
                 "--headless",
                 "--convert-to",
