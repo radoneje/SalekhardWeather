@@ -45,8 +45,8 @@ async function main() {
 
     const sheet2 = workbook.addWorksheet('Currency');
     let valute=parser.parse(valuteXML, options).ValCurs.Valute;
-    let valute_old=parser.parse(valuteXML_old, options).ValCurs.Valute;
-    //console.log(valute)
+    let valute_old=parser.parse(valuteXML_old, options);//.ValCurs.Valute;
+    console.log(valute_old)
     i=1;
     for (var currency of config.currency) {
         var curs=valute.filter(v=>{return v.CharCode==currency})
