@@ -16,10 +16,6 @@ var nfuploadRouter = require('./routes/nfupload');
 
 app.use('/nfupload', nfuploadRouter);
 
-app.use("/nfupload",(req, res)=>{
-    console.log("nfupload", req.body)
-    res.json(1)
-})
 
 
 app.get('/', (req, res) => {
