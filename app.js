@@ -69,7 +69,7 @@ async function main() {
                 "--convert-to",
                 "xls",
                 "--outdir",
-                config.outdirNF,
+                config.outdir,
                 "/tmp/informer.xlsx",
 
             ]/*, {
