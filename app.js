@@ -23,7 +23,7 @@ async function main() {
     }
     let valuteXML=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp")).data;
     let valuteXML_old=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp?date_req="+moment().add("-1", "day").format("DD/MM/yyyy"))).data;
-    console.log("https://www.cbr.ru/scripts/XML_daily.asp?date_req="+moment().add("-1", "day").format("DD/MM/yyyy"))
+    //console.log("https://www.cbr.ru/scripts/XML_daily.asp?date_req="+moment().add("-1", "day").format("DD/MM/yyyy"))
     var options = {
         attributeNamePrefix : "@_",
         attrNodeName: "attr", //default is 'false'
@@ -45,8 +45,8 @@ async function main() {
 
     const sheet2 = workbook.addWorksheet('Currency');
     let valute=parser.parse(valuteXML, options).ValCurs.Valute;
-    let valute_old=parser.parse(valuteXML_old, options);//.ValCurs.Valute;
-    console.log(valute_old)
+    let valute_old=parser.parse(valuteXML_old, options).ValCurs.Valute;
+    //console.log(valute_old)
     i=1;
     for (var currency of config.currency) {
         var curs=valute.filter(v=>{return v.CharCode==currency})
