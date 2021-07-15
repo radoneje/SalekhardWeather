@@ -45,7 +45,7 @@ async function main() {
 
     const sheet2 = workbook.addWorksheet('Currency');
     let valute=parser.parse(valuteXML, options).ValCurs.Valute;
-    let valute_old=parser.parse(valuteXML, options).ValCurs.Valute;
+    let valute_old=parser.parse(valuteXML_old, options).ValCurs.Valute;
     //console.log(valute)
     i=1;
     for (var currency of config.currency) {
