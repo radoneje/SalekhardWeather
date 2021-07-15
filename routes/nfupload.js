@@ -29,7 +29,7 @@ router.post("/",async (req,res)=>{
             row.values = ["", "", "", elem.text]
         if (elem.type == 'SRC')
             row.values = ["", "", "", "", elem.text]
-        console.log("arr elem", i, row.values)
+        console.log("arr elem", i, row.values, elem)
     }
     console.log("make xlsx")
         await workbook.xlsx.writeFile("/tmp/nf.xlsx")
