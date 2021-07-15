@@ -17,7 +17,7 @@ router.post("/",async (req,res)=>{
     const sheet = workbook.addWorksheet('NF');
     var i = 1;
     console.log("arr loop")
-    for (var elem in arr) {
+    arr.forEach(elem=> {
 
         let row = sheet.getRow(i)
         i++;
@@ -30,7 +30,7 @@ router.post("/",async (req,res)=>{
         if (elem.type == 'SRC')
             row.values = ["", "", "", "", elem.text]
         console.log("arr elem", i, row.values, elem)
-    }
+    });
     console.log("make xlsx")
         await workbook.xlsx.writeFile("/tmp/nf.xlsx")
     console.log("convert xlsx")
