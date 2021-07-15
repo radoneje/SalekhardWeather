@@ -22,7 +22,7 @@ async function main() {
         i++;
     }
     let valuteXML=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp")).data;
-    let valuteXML_old=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp?date_req="+moment().add("-1", "day").format("DD/MM/yyyy HH:mm:ss"))).data;
+    let valuteXML_old=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp?date_req="+moment().add("-1", "day").format("DD/MM/yyyy"))).data;
     console.log("https://www.cbr.ru/scripts/XML_daily.asp?date_req="+moment().add("-1", "day").format("DD/MM/yyyy"))
     var options = {
         attributeNamePrefix : "@_",
