@@ -12,11 +12,11 @@ const app = express()
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
-app.get('/nfupload', (req, res) => {
+app.use("/nfupload",(req, res)=>{
     console.log(req.body)
     res.json(1)
 })
+
 
 app.get('/', (req, res) => {
     res.send('ok')
