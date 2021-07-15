@@ -78,7 +78,8 @@ async function main() {
             }*/
         )
     ps.on('close', (code) => {
-            console.log( moment().format("DD.MM.yyyy HH:mm:ss") +` sleep 20 min`);
+        console.log("good by")
+            //console.log( moment().format("DD.MM.yyyy HH:mm:ss") +` sleep 20 min`);
             //setTimeout(async ()=>{await main()}, 20*60*1000)
     });
     ps.stdout.on('data', (data) => {
