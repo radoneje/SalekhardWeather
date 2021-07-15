@@ -1,6 +1,7 @@
 {
   "openweathermapAppId": "0186daef2797f0296e1960b8909a570b",
   "outdir": "/mnt/titr-efirka",
+  "outdirNF": "/mnt/titr-news",
   "city": [
     {"ru":"Салехард","en": "Salehard, RU" },
     {"ru": "Муравленко","en": "Muravlenko, RU"},

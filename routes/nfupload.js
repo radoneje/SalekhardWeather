@@ -19,14 +19,15 @@ router.post("/",async (req,res)=>{
     for (var elem of arr) {
         let row = sheet.getRow(i)
         i++;
-        if(elem.type=='SOT')
-            row.values =[elem.name, elem.pos]
-        if(elem.type=='THM')
-            row.values =["","",elem.text]
-        if(elem.type=='GEO')
-            row.values =["","","",elem.text]
-        if(elem.type=='SRC')
-            row.values =["","","","",elem.text]
+        if (elem.type == 'SOT')
+            row.values = [elem.name, elem.pos]
+        if (elem.type == 'THM')
+            row.values = ["", "", elem.text]
+        if (elem.type == 'GEO')
+            row.values = ["", "", "", elem.text]
+        if (elem.type == 'SRC')
+            row.values = ["", "", "", "", elem.text]
+    }
         await workbook.xlsx.writeFile("/tmp/nf.xlsx")
         const ps= child_process.spawn("libreoffice", [
                 "--headless",
@@ -42,7 +43,7 @@ router.post("/",async (req,res)=>{
             }*/
         )
         ps.on('close', (code) => {
-            res.send("file is save to "+config.outdir+"/nf.xls")
+            res.send("file is save to "+config.outdirNF+"/nf.xls")
 
         });
         ps.stdout.on('data', (data) => {
@@ -52,7 +53,7 @@ router.post("/",async (req,res)=>{
             console.log(`${data}`);
         });
 
-    }
+
 
 
     res.json(2);
