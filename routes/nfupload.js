@@ -18,7 +18,7 @@ router.post("/",async (req,res)=>{
     var i = 1;
     console.log("arr loop")
     for (var elem in arr) {
-        console.log("arr elem", i)
+
         let row = sheet.getRow(i)
         i++;
         if (elem.type == 'SOT')
@@ -29,6 +29,7 @@ router.post("/",async (req,res)=>{
             row.values = ["", "", "", elem.text]
         if (elem.type == 'SRC')
             row.values = ["", "", "", "", elem.text]
+        console.log("arr elem", i, row.values)
     }
     console.log("make xlsx")
         await workbook.xlsx.writeFile("/tmp/nf.xlsx")
