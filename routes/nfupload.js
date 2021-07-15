@@ -16,7 +16,7 @@ router.post("/",async (req,res)=>{
     const workbook = new ExcelJS.Workbook();
     const sheet = workbook.addWorksheet('NF');
     var i = 1;
-    for (var elem of array) {
+    for (var elem of arr) {
         let row = sheet.getRow(i)
         i++;
         if(elem.type=='SOT')
