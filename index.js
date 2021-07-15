@@ -14,6 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.get('/nfupload', (req, res) => {
+    console.log(req.body)
     res.json(1)
 })
 

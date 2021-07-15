@@ -12,7 +12,7 @@ main();
 
 async function main() {
     const workbook = new ExcelJS.Workbook();
-    const sheet = workbook.addWorksheet('Sheet1');
+    const sheet = workbook.addWorksheet('weather');
     var i = 1;
     for (var city of config.city) {
         console.log(city)
