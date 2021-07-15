@@ -12,8 +12,12 @@ const app = express()
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+var nfuploadRouter = require('./routes/nfupload');
+
+app.use('/nfupload', nfuploadRouter);
+
 app.use("/nfupload",(req, res)=>{
-    console.log(req.body)
+    console.log("nfupload", req.body)
     res.json(1)
 })
 
