@@ -5,9 +5,6 @@ var logger = require('morgan');
 var createError = require('http-errors');
 
 
-
-
-
 const app = express()
 app.use(logger('dev'));
 app.use(express.json());
