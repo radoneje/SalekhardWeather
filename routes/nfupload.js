@@ -16,7 +16,7 @@ router.post("/",async (req,res)=>{
     const workbook = new ExcelJS.Workbook();
     const sheet = workbook.addWorksheet('NF');
     var i = 1;
-    for (var elem of arr) {
+    for (var elem in arr) {
         let row = sheet.getRow(i)
         i++;
         if (elem.type == 'SOT')
@@ -52,11 +52,6 @@ router.post("/",async (req,res)=>{
         ps.stderr.on('data', (data) => {
             console.log(`${data}`);
         });
-
-
-
-
-    res.json(2);
 })
 
 
