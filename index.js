@@ -13,12 +13,14 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
-app.get('/', (req, res) => {
+app.get('/nfupload', (req, res) => {
     res.json(1)
 })
+
+app.get('/', (req, res) => {
+    res.send('ok')
+})
+
 
 
 app.listen(port, () => {
