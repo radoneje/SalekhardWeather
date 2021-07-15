@@ -38,7 +38,7 @@ router.post("/",async (req,res)=>{
                 "--convert-to",
                 "xls",
                 "--outdir",
-                config.outdir,
+                config.outdirNF,
                 "/tmp/nf.xlsx",
 
             ]/*, {
