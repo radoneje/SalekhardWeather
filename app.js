@@ -23,7 +23,7 @@ async function main() {
     }
     let valuteXML=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp")).data;
     let valuteXML_old=(await axios.get("https://www.cbr.ru/scripts/XML_daily.asp?date_req="+moment().add("-1", "day").format("DD/MM/yyyy HH:mm:ss"))).data;
-    console.log("https://www.cbr.ru/scripts/XML_daily.asp?date_req="+moment().add("-1", "day").format("DD/MM/yyyy HH:mm:ss"))
+    console.log("https://www.cbr.ru/scripts/XML_daily.asp?date_req="+moment().add("-1", "day").format("DD/MM/yyyy"))
     var options = {
         attributeNamePrefix : "@_",
         attrNodeName: "attr", //default is 'false'
