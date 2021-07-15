@@ -43,15 +43,17 @@ async function main() {
         stopNodes: ["parse-me-as-string"]
     };
 
+    const sheet2 = workbook.addWorksheet('Currency');
     let valute=parser.parse(valuteXML, options).ValCurs.Valute;
     let valute_old=parser.parse(valuteXML, options).ValCurs.Valute;
     //console.log(valute)
+    i=1;
     for (var currency of config.currency) {
         var curs=valute.filter(v=>{return v.CharCode==currency})
         var curs_old=valute_old.filter(v=>{return v.CharCode==currency})
         if(curs.length>0){
             let trand=(curs[0].Value-curs_old[0].Value)<0?0:1
-            let row = sheet.getRow(i)
+            let row = sheet2.getRow(i)
             console.log(currency, curs[0].Value, "", trand, moment().format("DD.MM.yyyy HH:mm:ss"))
             row.values = [currency, curs[0].Value, "", trand, moment().format("DD.MM.yyyy HH:mm:ss")];
             i++;
@@ -60,7 +62,7 @@ async function main() {
     }
 
 
-    await workbook.xlsx.writeFile("/tmp/weather.xlsx")
+    await workbook.xlsx.writeFile("/tmp/informer.xlsx")
 
     const ps= child_process.spawn("libreoffice", [
                 "--headless",
@@ -68,7 +70,7 @@ async function main() {
                 "xls",
                 "--outdir",
                 config.outdir,
-                "/tmp/weather.xlsx",
+                "/tmp/informer.xlsx",
 
             ]/*, {
                 detached: true,
