@@ -47,7 +47,8 @@ router.post("/",async (req,res)=>{
     for(var i=1; i++;i<=values.length)
     {
         let row = sheet.getRow(i)
-        row.values =values[i-1];
+        console.log(values[i-1])
+        row.values =[1,2,3];
     }
 
 
