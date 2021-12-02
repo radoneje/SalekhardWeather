@@ -17,8 +17,14 @@ router.post("/",async (req,res)=>{
     const sheet = workbook.addWorksheet('NF');
     var i = 1;
     var  buf={SOT:[],THM:[],GEO:[],SRC:[] }
-console.log(arr)
      arr.forEach(elem=> {
+         if(elem.name)
+             elem.name=elem.name.replace(/&nbsp;/g, " ")
+         if(elem.pos)
+             elem.pos=elem.pos.replace(/&nbsp;/g, " ")
+         if(elem.text)
+             elem.text=elem.text.replace(/&nbsp;/g, " ")
+
          if (elem.type == 'SOT'){
              buf.SOT.push({name:elem.name, pos:elem.pos})
          }
@@ -39,7 +45,6 @@ console.log(arr)
 
         let row = sheet.getRow(i + 1)
         row.values = values;
-        console.log(values);
     }
 /*
      var values=[];
