@@ -24,7 +24,7 @@ router.post("/",async (req,res)=>{
              buf.SOT.push({name:elem.name, pos:elem.pos})
          }
          if (elem.type == 'THM')
-             buf.THMpush(elem.text)
+             buf.THM.push(elem.text)
          if (elem.type == 'GEO')
              buf.GEO.push(elem.text)
          if (elem.type == 'SRC')
