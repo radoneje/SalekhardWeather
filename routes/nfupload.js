@@ -17,20 +17,21 @@ router.post("/",async (req,res)=>{
     const sheet = workbook.addWorksheet('NF');
     var i = 1;
     console.log("arr loop", arr);
-    /* var buf=[[],[],[],[],[]]
+    var  buf={SOT:[],Name:[],THM:[],GEO:[],SRC:[] }
+
      arr.forEach(elem=> {
          if (elem.type == 'SOT'){
-             buf[0].push(elem.name)
-             buf[1].push(elem.pos)
+             buf.SOT.push({name:elem.name, pos:elem.pos})
          }
          if (elem.type == 'THM')
-             buf[2].push(elem.text)
+             buf.THMpush(elem.text)
          if (elem.type == 'GEO')
-             buf[3].push(elem.text)
+             buf.GEO.push(elem.text)
          if (elem.type == 'SRC')
-             buf[4].push(elem.text)
+             buf.SRC.push(elem.text)
      })
-
+    console.log("buf loop", buf);
+/*
      var values=[];
      var l=Math.max(buf[0].length, buf[1].length, buf[2].length, buf[3].length,buf[4].length)
      for(var i=1; i<=l;i++){
