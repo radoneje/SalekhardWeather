@@ -30,17 +30,22 @@ router.post("/",async (req,res)=>{
         if (elem.type == 'SRC')
             buf[4].push(elem.text)
     })
+    var values=[];
     var l=Math.max(buf[0].length, buf[1].length, buf[2].length, buf[3].length,buf[4].length)
     for(var i=1; i<=l;i++){
-        var values=[];
+
         buf.forEach(b=>{
             if(b.length<i-1)
                 values.push(b)
             else
                 values.push("")
         })
+
+    }
+    for(var i=1; i++;i<=values.length)
+    {
         let row = sheet.getRow(i)
-        row.values =values;
+        row.values =values[i-1];
     }
 
 
