@@ -32,6 +32,13 @@ router.post("/",async (req,res)=>{
      })
     var l=Math.max(buf.SOT.length, buf.THM.length, buf.GEO.length, buf.SRC.length)
     console.log("buf loop", buf, l, buf.length);
+    for(var i=0; i<l;i++){
+        var values=[];
+        var name=buf.SOT[i]? buf.SOT[i].name:"";
+        var pos=buf.SOT[i]? buf.SOT[i].pos:"";
+        values.push(name, pos,buf.THM[i],buf.GEO[i],buf.SRC[i] )
+        console.log(values);
+    }
 /*
      var values=[];
      var l=Math.max(buf[0].length, buf[1].length, buf[2].length, buf[3].length,buf[4].length)
