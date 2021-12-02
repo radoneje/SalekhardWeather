@@ -16,7 +16,6 @@ router.post("/",async (req,res)=>{
     const workbook = new ExcelJS.Workbook();
     const sheet = workbook.addWorksheet('NF');
     var i = 1;
-    console.log("arr loop", arr);
     var  buf={SOT:[],THM:[],GEO:[],SRC:[] }
 
      arr.forEach(elem=> {
@@ -31,13 +30,15 @@ router.post("/",async (req,res)=>{
              buf.SRC.push(elem.text)
      })
     var l=Math.max(buf.SOT.length, buf.THM.length, buf.GEO.length, buf.SRC.length)
-    console.log("buf loop", buf, l, buf.length);
-    for(var i=0; i<l;i++){
-        var values=[];
-        var name=buf.SOT[i]? buf.SOT[i].name:"";
-        var pos=buf.SOT[i]? buf.SOT[i].pos:"";
-        values.push(name, pos,buf.THM[i]||"",buf.GEO[i]||"",buf.SRC[i]||"" )
-        console.log(values);
+
+    for(var i=0; i<l;i++) {
+        var values = [];
+        var name = buf.SOT[i] ? buf.SOT[i].name : "";
+        var pos = buf.SOT[i] ? buf.SOT[i].pos : "";
+        values.push(name, pos, buf.THM[i] || "", buf.GEO[i] || "", buf.SRC[i] || "")
+
+        let row = sheet.getRow(i + 1)
+        row.values = values;
     }
 /*
      var values=[];
