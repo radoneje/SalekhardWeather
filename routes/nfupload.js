@@ -36,7 +36,7 @@ router.post("/",async (req,res)=>{
         var values=[];
         var name=buf.SOT[i]? buf.SOT[i].name:"";
         var pos=buf.SOT[i]? buf.SOT[i].pos:"";
-        values.push(name, pos,buf.THM[i],buf.GEO[i],buf.SRC[i] )
+        values.push(name, pos,buf.THM[i]||"",buf.GEO[i]||"",buf.SRC[i]||"" )
         console.log(values);
     }
 /*
