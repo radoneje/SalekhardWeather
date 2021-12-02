@@ -39,6 +39,7 @@ router.post("/",async (req,res)=>{
 
         let row = sheet.getRow(i + 1)
         row.values = values;
+        console.log(values);
     }
 /*
      var values=[];
