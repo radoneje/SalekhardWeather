@@ -44,12 +44,12 @@ router.post("/",async (req,res)=>{
 
     }
     console.log("buf ", values,values.length );
-   /* for(var i=1; i++;i<=values.length)
+    for(var i=1;i<=values.length; i++)
     {
         let row = sheet.getRow(i)
-       // console.log(i, values[i-1])
+        console.log(i, values[i-1])
         row.values =[1,2,3];
-    }*/
+    }
 
 
    /* arr.forEach(elem=> {
