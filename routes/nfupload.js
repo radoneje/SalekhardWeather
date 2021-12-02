@@ -17,7 +17,7 @@ router.post("/",async (req,res)=>{
     const sheet = workbook.addWorksheet('NF');
     var i = 1;
     console.log("arr loop", arr);
-    var  buf={SOT:[],Name:[],THM:[],GEO:[],SRC:[] }
+    var  buf={SOT:[],THM:[],GEO:[],SRC:[] }
 
      arr.forEach(elem=> {
          if (elem.type == 'SOT'){
@@ -30,7 +30,8 @@ router.post("/",async (req,res)=>{
          if (elem.type == 'SRC')
              buf.SRC.push(elem.text)
      })
-    console.log("buf loop", buf);
+    var l=Math.max(buf.SOT.length, buf.THM.length, buf.GEO.length, buf.SRC.length)
+    console.log("buf loop", buf, l, buf.length);
 /*
      var values=[];
      var l=Math.max(buf[0].length, buf[1].length, buf[2].length, buf[3].length,buf[4].length)
