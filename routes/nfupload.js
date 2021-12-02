@@ -37,8 +37,8 @@ router.post("/",async (req,res)=>{
         buf.forEach(b=>{
             if(b.length<i-1)
                 values.push(b)
-            else
-                values.push("")
+            //else
+                //values.push("")
         })
 
     }
