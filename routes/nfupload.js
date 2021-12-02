@@ -17,7 +17,7 @@ router.post("/",async (req,res)=>{
     const sheet = workbook.addWorksheet('NF');
     var i = 1;
     var  buf={SOT:[],THM:[],GEO:[],SRC:[] }
-
+console.log(arr)
      arr.forEach(elem=> {
          if (elem.type == 'SOT'){
              buf.SOT.push({name:elem.name, pos:elem.pos})
