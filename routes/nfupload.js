@@ -12,7 +12,7 @@ var router = express.Router();
 router.post("/",async (req,res)=>{
 
     var arr=JSON.parse(req.body.titles)
-    console.log(arr)
+   // console.log(arr)
     const workbook = new ExcelJS.Workbook();
     const sheet = workbook.addWorksheet('NF');
     var i = 1;
